@@ -101,5 +101,9 @@ endfunction
 " Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " To create markdown level 1 and level 2 header
-nnoremap <leader>1 yypVr=
-nnoremap <leader>2 yypVr-
+nnoremap <leader>h1 yypVr=
+nnoremap <leader>h2 yypVr-
+nnoremap <leader>cs :let @/ = ""<cr>
+" Clear all trailing white spaces
+" From http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+nnoremap <leader>W :%s/\v\s+$//<cr>:let @/ = ""<cr>

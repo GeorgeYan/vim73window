@@ -6,7 +6,7 @@ call pathogen#helptags()
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Setup items 
+" Setup items offered by default installation
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
@@ -39,17 +39,15 @@ function MyDiff()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" My personal VIM setup
+" My personal setup using default commands/values in VIM
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-colorscheme zenburn
-syntax off
 
 " Tab
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set softtabstop=4 " makes the spaces feel like real tabs
+" makes the spaces feel like real tabs
+set softtabstop=4 
 
 " Search
 set ignorecase
@@ -63,16 +61,27 @@ set ai
 " Spell check
 set spell
 
+" Show line number
+set number
+
+" Do not highlight syntax
+syntax off
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin related setup
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Color scheme
+colorscheme zenburn
+
 " To use LanguageTool for grammar checking
 set nocompatible
 filetype plugin on
 let g:languagetool_jar="e:/My_Program_Files/LanguageTool/LanguageTool.jar"
 let g:languagetool_lang="en-US"
 
-" Show line number
-set number
-
-
+" Automatically justify table with | using tabular plugin
 " From https://gist.github.com/287147
 inoremap <silent> <Bar> <Bar><Esc>:call <SID>align()<CR>a
 

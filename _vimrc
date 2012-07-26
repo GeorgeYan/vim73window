@@ -113,3 +113,7 @@ nnoremap <leader>W :%s/\v\s+$//<cr>:let @/ = ""<cr>
 nnoremap j gj
 nnoremap k gk
 
+" Add blank line
+" http://vim.wikia.com/wiki/Insert_newline_without_entering_insert_mode
+nnoremap <S-Enter> O<Esc>j
+nnoremap <CR> o<Esc>k

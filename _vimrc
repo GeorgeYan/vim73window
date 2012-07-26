@@ -103,6 +103,8 @@ endfunction
 " To create markdown level 1 and level 2 header
 nnoremap <leader>h1 yypVr=
 nnoremap <leader>h2 yypVr-
+
+" Clear search terms
 nnoremap <leader>cs :let @/ = ""<cr>
 
 " Clear all trailing white spaces

@@ -6,10 +6,13 @@ call pathogen#helptags()
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Setup items offered by default installation
+" Setup items offered by default installation for Windows Vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" No compatibility with VI
 set nocompatible
+
 source $VIMRUNTIME/vimrc_example.vim
+
 "source $VIMRUNTIME/mswin.vim
 "behave mswin
 
@@ -67,6 +70,13 @@ set number
 " Do not highlight syntax
 syntax off
 
+" No compatibility with VI
+set nocompatible
+
+" Enable filetype detection and loads 'ftplugin.vim'
+" http://vimdoc.sourceforge.net/htmldoc/filetype.html
+filetype plugin on
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin related setup
@@ -74,12 +84,6 @@ syntax off
 
 " Color scheme
 colorscheme zenburn
-
-" To use LanguageTool for grammar checking
-set nocompatible
-filetype plugin on
-let g:languagetool_jar="e:/My_Program_Files/LanguageTool/LanguageTool.jar"
-let g:languagetool_lang="en-US"
 
 " Automatically justify table with | using tabular plugin
 " From https://gist.github.com/287147
@@ -95,6 +99,14 @@ function! s:align()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin related setup: requires external program
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" To use LanguageTool for grammar checking
+let g:languagetool_jar="e:/My_Program_Files/LanguageTool/LanguageTool.jar"
+let g:languagetool_lang="en-US"
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

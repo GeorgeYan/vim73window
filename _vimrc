@@ -119,3 +119,8 @@ nnoremap k gk
 " http://vim.wikia.com/wiki/Insert_newline_without_entering_insert_mode
 nnoremap <S-Enter> O<Esc>j
 nnoremap <CR> o<Esc>k
+
+" Use space and backspace to navigate by 10 lines
+" http://zuttobenkyou.wordpress.com/2011/02/15/some-thoughts-on-emacs-and-vim/
+nnoremap <space> 10jzz
+nnoremap <backspace> 10kzz

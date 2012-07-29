@@ -138,3 +138,4 @@ nnoremap <CR> o<Esc>
 " http://zuttobenkyou.wordpress.com/2011/02/15/some-thoughts-on-emacs-and-vim/
 nnoremap <space> 10jzz
 nnoremap <backspace> 10kzz
+nnoremap <S-space> 10kzz

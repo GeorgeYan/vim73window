@@ -129,8 +129,10 @@ nnoremap k gk
 
 " Add blank line
 " http://vim.wikia.com/wiki/Insert_newline_without_entering_insert_mode
-nnoremap <S-Enter> O<Esc>j
-nnoremap <CR> o<Esc>k
+" nnoremap <S-Enter> O<Esc>j
+" nnoremap <CR> o<Esc>k
+nnoremap <S-Enter> O<Esc>
+nnoremap <CR> o<Esc>
 
 " Use space and backspace to navigate by 10 lines
 " http://zuttobenkyou.wordpress.com/2011/02/15/some-thoughts-on-emacs-and-vim/

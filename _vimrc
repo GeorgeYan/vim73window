@@ -123,6 +123,11 @@ nnoremap <leader>cs :let @/ = ""<cr>
 " From http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 nnoremap <leader>W :%s/\v\s+$//<cr>:let @/ = ""<cr>
 
+" Use 'magic' for search always
+" From http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+nnoremap / /\v
+vnoremap / /\v
+
 " Move by screen line
 nnoremap j gj
 nnoremap k gk

@@ -152,3 +152,10 @@ nnoremap <S-space> 10kzz
 " Do not display automatically set marks
 " http://stackoverflow.com/questions/8720313/show-marks-plugin-causes-marks-to-pop-in-after-around-4-seconds
 let showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+
+" http://vimcasts.org/episodes/show-invisibles/
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:?\ ,eol:¬

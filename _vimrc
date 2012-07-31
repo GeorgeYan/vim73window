@@ -131,6 +131,9 @@ vnoremap / /\v
 " Move by screen line
 nnoremap j gj
 nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+
 
 " Add blank line
 " http://vim.wikia.com/wiki/Insert_newline_without_entering_insert_mode

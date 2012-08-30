@@ -2,8 +2,8 @@
 
 " Run PDFTeXify and close the window automatically (can be problem with errors)
 " http://vim.1045645.n5.nabble.com/hit-any-key-to-close-this-window-td1166224.html
-nnoremap <leader>pt :silent ! texify --pdf %<CR>
-
+" nnoremap <leader>pt :silent ! texify --pdf %<CR>
+nnoremap <leader>pt :w <bar> silent ! texify --pdf %<CR>
 
 ""  Function (mostly borrowed from tex_pdf
 "function! <SID>ViewTexPdf(...)

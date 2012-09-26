@@ -159,3 +159,7 @@ let showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:?\ ,eol:¬
+
+" Select visual block again after decreasing or increasing indent
+vnoremap < <gv
+vnoremap > >gv

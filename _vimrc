@@ -68,7 +68,7 @@ set spell
 set number
 
 " Do not highlight syntax
-syntax off
+" syntax off
 
 " No compatibility with VI
 set nocompatible

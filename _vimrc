@@ -163,3 +163,16 @@ set listchars=tab:?\ ,eol:¬
 " Select visual block again after decreasing or increasing indent
 vnoremap < <gv
 vnoremap > >gv
+
+" Replace extended ASCII characters by similar looking ASCII code
+function! ToAscii()
+    :silent! %s/\%x91/'/g
+    :silent! %s/\%x92/'/g
+    :silent! %s/\%x93/"/g
+    :silent! %s/\%x94/"/g
+    :silent! %s/\%x95/ - /g
+    :silent! %s/\%x96/-/g
+    :silent! %s/\%x97/--/g
+endfunction
+
+nnoremap <silent> <leader>ta :call ToAscii()<CR>

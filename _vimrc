@@ -176,3 +176,16 @@ function! ToAscii()
 endfunction
 
 nnoremap <silent> <leader>ta :call ToAscii()<CR>
+
+
+" Script to convert Test bank to latex form
+function! MakeMultipleChoice()
+    :silent! :1
+    :silent! normal I\question 
+    :silent! g/\v^a./normal O\begin{choices}
+    :silent! g/\v^e./normal o\end{choices}
+    :silent! %s/\v^[abcde]./    \\choice/g
+    :silent! :retab
+endfunction
+
+nnoremap <silent> <leader>mmc :call MakeMultipleChoice()<CR>

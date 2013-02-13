@@ -185,6 +185,9 @@ function! MakeMultipleChoice()
     :silent! g/\v^a./normal O\begin{choices}
     :silent! g/\v^e./normal o\end{choices}
     :silent! %s/\v^[abcde]./    \\choice/g
+    :silent! %s/\v\$/\\$/g
+    :silent! %s/\v\&/\\&/g
+    :silent! %s/\v\%/\\%/g
     :silent! :retab
 endfunction
 

@@ -173,6 +173,7 @@ function! ToAscii()
     :silent! %s/\%x95/ - /g
     :silent! %s/\%x96/-/g
     :silent! %s/\%x97/--/g
+    :silent! %s/\%x85/.../g
 endfunction
 
 nnoremap <silent> <leader>ta :call ToAscii()<CR>

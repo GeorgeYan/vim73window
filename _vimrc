@@ -193,6 +193,7 @@ function! MakeMultipleChoice()
     :silent! %s/\v\%/\\%/g
     :silent! %s/\v_+/\\blankplaceholder/g
     :silent! :retab
+    :silent! normal Go
 endfunction
 
 nnoremap <silent> <leader>mmc :call MakeMultipleChoice()<CR>
